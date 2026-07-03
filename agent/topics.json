@@ -1,0 +1,90 @@
+{
+  "_comment": "Themenrubriken für den KI-Industriewende-Agenten. Neue Winkel werden durch Web-Recherche ergänzt.",
+  "rubriken": [
+    {
+      "id": "industrie",
+      "name": "Industrie 4.0",
+      "beschreibung": "KI in der deutschen Produktion, Smart Factory, Predictive Maintenance, Robotik",
+      "output_dir": "industrie",
+      "wp_category": "industrie-40",
+      "seed_themen": [
+        "Predictive Maintenance mit KI in der deutschen Fertigung",
+        "Digitaler Zwilling: Wie deutsche Maschinenbauer KI-Simulation einsetzen",
+        "KI in der Automobilindustrie: Von der Fließband-Steuerung zur autonomen Fabrik",
+        "Smart Factory Deutschland: Stand der Technik und Hürden bei der Einführung",
+        "KI-gestützte Qualitätskontrolle: Bildverarbeitung in der Produktion",
+        "Lieferketten-KI: Resilienz durch Echtzeit-Optimierung nach Corona",
+        "Energieeffizienz durch KI: Potenziale in der deutschen Industrie",
+        "Mensch-Roboter-Kollaboration: Sicherheit und Produktivität vereinen"
+      ]
+    },
+    {
+      "id": "wissenschaft",
+      "name": "Wissenschaft & KI",
+      "beschreibung": "KI-Forschungsstand, Ethik, LLMs, EU AI Act, wissenschaftliche Debatte",
+      "output_dir": "wissenschaft",
+      "wp_category": "wissenschaft-ki",
+      "seed_themen": [
+        "Large Language Models in der deutschen Wissenschaft: Chancen und Risiken",
+        "EU AI Act in der Praxis: Was Unternehmen jetzt wissen müssen",
+        "KI-Bias: Diskriminierende Algorithmen erkennen und vermeiden",
+        "Generative KI und Urheberrecht: Die rechtliche Grauzone in Deutschland",
+        "KI in der Medizin: Diagnose-Unterstützung und die Haftungsfrage",
+        "Explainable AI: Warum Transparenz bei KI-Entscheidungen entscheidend ist",
+        "KI und Klimaschutz: Energieverbrauch vs. Effizienzgewinn",
+        "Souveräne KI für Europa: Warum Deutschland eigene Modelle braucht"
+      ]
+    },
+    {
+      "id": "debatte",
+      "name": "KI-Debatte",
+      "beschreibung": "Pro & Contra, gesellschaftliche Diskussion, Zukunft der Arbeit",
+      "output_dir": "debatte",
+      "wp_category": "ki-debatte",
+      "seed_themen": [
+        "KI und der Arbeitsmarkt: Jobkiller oder Jobwandler?",
+        "Wird KI Deutschland retten oder gefährden?",
+        "Pro & Contra: KI-Pflicht in der Unternehmensausbildung",
+        "Datenschutz vs. KI-Fortschritt: Muss Deutschland lockern?",
+        "KI-Regulierung: Zu viel, zu wenig, zu spät?",
+        "Wird KI die Mittelschicht gefährden?",
+        "Open Source vs. proprietäre KI: Was ist besser für Deutschland?",
+        "Chinesische und US-amerikanische KI-Dominanz: Was ist Deutschlands Antwort?"
+      ]
+    },
+    {
+      "id": "ausbildung",
+      "name": "Ausbildung & Qualifikation",
+      "beschreibung": "KI in Berufsausbildung, Weiterbildung, Hochschule, lebenslanges Lernen",
+      "output_dir": "ausbildung",
+      "wp_category": "ausbildung-qualifikation",
+      "seed_themen": [
+        "KI in der dualen Ausbildung: Berufsschulen im Aufholmodus",
+        "Welche Berufe KI-resistent sind und warum",
+        "KI-Weiterbildung für Beschäftigte: Die besten Programme in Deutschland 2026",
+        "Hochschule und KI: Neue Studiengänge und die Frage der akademischen Integrität",
+        "KI als Lernassistent: Personalisiertes Lernen in der Praxis",
+        "Das duale System im KI-Zeitalter: Reform oder Revolution?",
+        "Fachkräftemangel und KI: Kann Technologie den Engpass lösen?",
+        "KI-Alphabetisierung: Was jeder Deutsche über KI wissen sollte"
+      ]
+    },
+    {
+      "id": "kmu",
+      "name": "KMU & Mittelstand",
+      "beschreibung": "KI-Einführung in kleinen und mittelständischen Unternehmen, Förderung, Praxisbeispiele",
+      "output_dir": "kmu",
+      "wp_category": "kmu-mittelstand",
+      "seed_themen": [
+        "KI-Förderprogramme für den Mittelstand: Vollständiger Überblick 2026",
+        "Die 10 besten KI-Tools für KMU unter 500 Euro im Monat",
+        "Wie ein Handwerksbetrieb mit KI 30% effizienter wurde — Praxisbeispiel",
+        "KI-Einstieg für KMU: Der Schritt-für-Schritt-Leitfaden",
+        "Datenschutz im KMU: KI nutzen ohne DSGVO-Risiken",
+        "KI im Kundenservice: Chatbots und Automatisierung für kleine Unternehmen",
+        "Buchführung mit KI: Welche Tools sich für kleine Betriebe lohnen",
+        "Mittelstand goes AI: Erfolgsgeschichten aus Bayern, NRW und Baden-Württemberg"
+      ]
+    }
+  ]
+}

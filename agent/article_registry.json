@@ -1,0 +1,57 @@
+[
+  {
+    "title": "KI-Förderprogramme für den Mittelstand: Vollständiger Überblick 2026",
+    "excerpt": "Der deutsche Mittelstand steht im Juni 2026 vor einer strategischen Zäsur. Während konzerneigene R&D-Abteilungen KI bereits in skalierbare Produktlinien und Supply-Chains integrier…",
+    "rubrik_id": "kmu",
+    "rubrik_label": "KMU & Mittelstand",
+    "rubrik_emoji": "💼",
+    "tag_class": "",
+    "rubrik_color": "#ede9fe",
+    "datum": "2026-06-21",
+    "html_path": "kmu\\artikel\\2026-06-21-ki-foerderprogramme-fuer-den-mittelstand-vollstaendiger-uebe.html"
+  },
+  {
+    "title": "Predictive Maintenance mit KI in der deutschen Fertigung: Vom Trend zur standortfesten Realität",
+    "excerpt": "Ungeplante Maschinenausfälle kosten die produzierende Industrie weltweit jedes Jahr mehrere Milliarden Euro, unterbrechen Lieferketten und gefährden die Wettbewerbsfähigkeit des St…",
+    "rubrik_id": "industrie",
+    "rubrik_label": "Industrie 4.0",
+    "rubrik_emoji": "🏭",
+    "tag_class": "blue",
+    "rubrik_color": "#dbeafe",
+    "datum": "2026-06-21",
+    "html_path": "industrie\\artikel\\2026-06-21-predictive-maintenance-mit-ki-in-der-deutschen-fertigung-vom.html"
+  },
+  {
+    "title": "Large Language Models in der deutschen Wissenschaft: Chancen und Risiken",
+    "excerpt": "Die deutsche Wissenschaft steht seit 2025/2026 an einem klar definierten Wendepunkt. Global treibt die Integration von Large Language Models (LLM) Forschungsabläufe, Datenanalyse u…",
+    "rubrik_id": "wissenschaft",
+    "rubrik_label": "Wissenschaft & KI",
+    "rubrik_emoji": "🔬",
+    "tag_class": "teal",
+    "rubrik_color": "#dcfce7",
+    "datum": "2026-06-21",
+    "html_path": "wissenschaft\\artikel\\2026-06-21-large-language-models-in-der-deutschen-wissenschaft-chancen-.html"
+  },
+  {
+    "title": "KI in der dualen Ausbildung: Berufsschulen im Aufholmodus",
+    "excerpt": "Die duale Ausbildung durchläuft eine fundamentale Transformation, die sich an den Lehrplänen und Unterrichtsräumen von Berufsschulen jedoch noch lange nicht widerspiegelt. Während…",
+    "rubrik_id": "ausbildung",
+    "rubrik_label": "Ausbildung",
+    "rubrik_emoji": "🎓",
+    "tag_class": "teal",
+    "rubrik_color": "#fce7f3",
+    "datum": "2026-06-21",
+    "html_path": "ausbildung\\artikel\\2026-06-21-ki-in-der-dualen-ausbildung-berufsschulen-im-aufholmodus.html"
+  },
+  {
+    "title": "KI und der Arbeitsmarkt: Jobkiller oder Jobwandler?",
+    "excerpt": "Die Debatte über künstliche Intelligenz und Beschäftigung prägt seit Monaten die öffentlichen Diskurse. Auslöser war unter anderem eine jüngst lancierte Warnung US-amerikanischer I…",
+    "rubrik_id": "debatte",
+    "rubrik_label": "KI-Debatte",
+    "rubrik_emoji": "⚖️",
+    "tag_class": "red",
+    "rubrik_color": "#fef9c3",
+    "datum": "2026-06-21",
+    "html_path": "debatte\\artikel\\2026-06-21-ki-und-der-arbeitsmarkt-jobkiller-oder-jobwandler.html"
+  }
+]

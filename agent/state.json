@@ -1,0 +1,53 @@
+{
+  "last_rubrik_index": 2,
+  "last_thema_index": {
+    "industrie": 0,
+    "wissenschaft": 0,
+    "debatte": 0,
+    "ausbildung": 0,
+    "kmu": 0
+  },
+  "last_run_utc": "2026-06-20T16:47:16Z",
+  "history": [
+    {
+      "utc": "2026-06-20T16:36:37Z",
+      "rubrik": "kmu",
+      "thema": "KI-Förderprogramme für den Mittelstand: Vollständiger Überblick 2026",
+      "titel": "KI-Förderprogramme für den Mittelstand: Vollständiger Überblick 2026",
+      "markdown": "content\\kmu\\2026-06-21-ki-foerderprogramme-fuer-den-mittelstand-vollstaendiger-uebe.md",
+      "html": "kmu\\artikel\\2026-06-21-ki-foerderprogramme-fuer-den-mittelstand-vollstaendiger-uebe.html"
+    },
+    {
+      "utc": "2026-06-20T16:41:51Z",
+      "rubrik": "industrie",
+      "thema": "Predictive Maintenance mit KI in der deutschen Fertigung",
+      "titel": "Predictive Maintenance mit KI in der deutschen Fertigung: Vom Trend zur standortfesten Realität",
+      "markdown": "content\\industrie\\2026-06-21-predictive-maintenance-mit-ki-in-der-deutschen-fertigung-vom.md",
+      "html": "industrie\\artikel\\2026-06-21-predictive-maintenance-mit-ki-in-der-deutschen-fertigung-vom.html"
+    },
+    {
+      "utc": "2026-06-20T16:43:32Z",
+      "rubrik": "wissenschaft",
+      "thema": "Large Language Models in der deutschen Wissenschaft: Chancen und Risiken",
+      "titel": "Large Language Models in der deutschen Wissenschaft: Chancen und Risiken",
+      "markdown": "content\\wissenschaft\\2026-06-21-large-language-models-in-der-deutschen-wissenschaft-chancen-.md",
+      "html": "wissenschaft\\artikel\\2026-06-21-large-language-models-in-der-deutschen-wissenschaft-chancen-.html"
+    },
+    {
+      "utc": "2026-06-20T16:45:24Z",
+      "rubrik": "ausbildung",
+      "thema": "KI in der dualen Ausbildung: Berufsschulen im Aufholmodus",
+      "titel": "KI in der dualen Ausbildung: Berufsschulen im Aufholmodus",
+      "markdown": "content\\ausbildung\\2026-06-21-ki-in-der-dualen-ausbildung-berufsschulen-im-aufholmodus.md",
+      "html": "ausbildung\\artikel\\2026-06-21-ki-in-der-dualen-ausbildung-berufsschulen-im-aufholmodus.html"
+    },
+    {
+      "utc": "2026-06-20T16:47:16Z",
+      "rubrik": "debatte",
+      "thema": "KI und der Arbeitsmarkt: Jobkiller oder Jobwandler?",
+      "titel": "KI und der Arbeitsmarkt: Jobkiller oder Jobwandler?",
+      "markdown": "content\\debatte\\2026-06-21-ki-und-der-arbeitsmarkt-jobkiller-oder-jobwandler.md",
+      "html": "debatte\\artikel\\2026-06-21-ki-und-der-arbeitsmarkt-jobkiller-oder-jobwandler.html"
+    }
+  ]
+}
