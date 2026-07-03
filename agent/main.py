@@ -41,6 +41,7 @@ from site_builder import (
     load_article_registry, save_article_registry,
     WEBSITE_DIR, _slugify,
 )
+from archiver import archive_site
 
 log = logging.getLogger("ki_industriewende")
 
@@ -154,6 +155,14 @@ def cmd_run(args: argparse.Namespace) -> int:
     # Blog-Index aktualisieren
     update_blog_index(registry)
     print("📰 Blog-Index aktualisiert")
+
+    # Website-Snapshot archivieren
+    print("\n📦 Archiviere Website-Snapshot...")
+    archive_tag = archive_site()
+    if archive_tag:
+        print(f"   ✓ GitHub Release erstellt: {archive_tag}")
+    else:
+        print("   ⚠ Archivierung übersprungen (siehe Log für Details)")
 
     # State speichern
     state.setdefault("history", []).append({
