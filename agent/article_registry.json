@@ -53,5 +53,16 @@
     "rubrik_color": "#fef9c3",
     "datum": "2026-06-21",
     "html_path": "debatte\\artikel\\2026-06-21-ki-und-der-arbeitsmarkt-jobkiller-oder-jobwandler.html"
+  },
+  {
+    "title": "KI-Resilienz in der Arbeitswelt 2026: Welche Berufe bleiben sicher und warum",
+    "excerpt": "Die Debatte um die Automatisierung durch Künstliche Intelligenz hat sich von reiner Spekulation zu einer präzisen Analysenlandschaft gewandelt. Während im Jahr 2024 noch pauschal v…",
+    "rubrik_id": "ausbildung",
+    "rubrik_label": "Ausbildung",
+    "rubrik_emoji": "🎓",
+    "tag_class": "teal",
+    "rubrik_color": "#fce7f3",
+    "datum": "2026-07-04",
+    "html_path": "ausbildung\\artikel\\2026-07-04-ki-resilienz-in-der-arbeitswelt-2026-welche-berufe-bleiben-s.html"
   }
 ]
