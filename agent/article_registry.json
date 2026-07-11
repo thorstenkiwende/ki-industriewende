@@ -64,5 +64,16 @@
     "rubrik_color": "#fce7f3",
     "datum": "2026-07-04",
     "html_path": "ausbildung\\artikel\\2026-07-04-ki-resilienz-in-der-arbeitswelt-2026-welche-berufe-bleiben-s.html"
+  },
+  {
+    "title": "Die 10 besten KI-Tools für KMU unter 500 Euro im Monat",
+    "excerpt": "Die industrielle Transformation durch künstliche Intelligenz ist kein Zukunftsszenario mehr, sondern present operational reality für den deutschen Mittelstand. Doch während Großkon…",
+    "rubrik_id": "kmu",
+    "rubrik_label": "KMU & Mittelstand",
+    "rubrik_emoji": "💼",
+    "tag_class": "",
+    "rubrik_color": "#ede9fe",
+    "datum": "2026-07-11",
+    "html_path": "kmu\\artikel\\2026-07-11-die-10-besten-ki-tools-fuer-kmu-unter-500-euro-im-monat.html"
   }
 ]

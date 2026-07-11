@@ -1,13 +1,13 @@
 {
-  "last_rubrik_index": 3,
+  "last_rubrik_index": 4,
   "last_thema_index": {
     "industrie": 0,
     "wissenschaft": 0,
     "debatte": 0,
     "ausbildung": 1,
-    "kmu": 0
+    "kmu": 1
   },
-  "last_run_utc": "2026-07-04T03:17:42Z",
+  "last_run_utc": "2026-07-11T12:04:41Z",
   "history": [
     {
       "utc": "2026-06-20T16:36:37Z",
@@ -56,6 +56,14 @@
       "titel": "KI-Resilienz in der Arbeitswelt 2026: Welche Berufe bleiben sicher und warum",
       "markdown": "content\\ausbildung\\2026-07-04-ki-resilienz-in-der-arbeitswelt-2026-welche-berufe-bleiben-s.md",
       "html": "ausbildung\\artikel\\2026-07-04-ki-resilienz-in-der-arbeitswelt-2026-welche-berufe-bleiben-s.html"
+    },
+    {
+      "utc": "2026-07-11T12:04:41Z",
+      "rubrik": "kmu",
+      "thema": "Die 10 besten KI-Tools für KMU unter 500 Euro im Monat",
+      "titel": "Die 10 besten KI-Tools für KMU unter 500 Euro im Monat",
+      "markdown": "content\\kmu\\2026-07-11-die-10-besten-ki-tools-fuer-kmu-unter-500-euro-im-monat.md",
+      "html": "kmu\\artikel\\2026-07-11-die-10-besten-ki-tools-fuer-kmu-unter-500-euro-im-monat.html"
     }
   ]
 }
