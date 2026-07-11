@@ -93,6 +93,28 @@ _ARTICLE_TEMPLATE = """\
 </html>"""
 
 
+_MONATE_DE = [
+    "Januar", "Februar", "März", "April", "Mai", "Juni",
+    "Juli", "August", "September", "Oktober", "November", "Dezember",
+]
+
+
+def _format_datum_lang(value: str) -> str:
+    """Wandelt ein gespeichertes Datum in das lange deutsche Format um (z. B. '11. Juli 2026').
+
+    Akzeptiert ISO (YYYY-MM-DD) und DD.MM.YYYY; bei Fehlschlag wird der Originalwert
+    zurückgegeben. Die Registry speichert weiterhin ISO, damit die Sortierung stimmt.
+    """
+    s = (value or "").strip()
+    for fmt in ("%Y-%m-%d", "%d.%m.%Y"):
+        try:
+            d = datetime.strptime(s[:10], fmt)
+            return f"{d.day}. {_MONATE_DE[d.month - 1]} {d.year}"
+        except ValueError:
+            continue
+    return s
+
+
 def _md_to_html_body(md_content: str) -> str:
     return _md_lib.markdown(
         md_content,
@@ -147,7 +169,7 @@ def build_article_page(md_with_frontmatter: str, rubrik_id: str, output_path: Pa
         rubrik_id=rubrik_id,
         rubrik_label=meta["label"],
         tag_class=meta["tag_class"],
-        datum=datum,
+        datum=_format_datum_lang(datum),  # Anzeige lang; Registry behält ISO
     )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -167,6 +189,13 @@ def build_article_page(md_with_frontmatter: str, rubrik_id: str, output_path: Pa
     }
 
 
+# Marker, die die injizierte Artikelliste im Blog-Index begrenzen. Explizite
+# Marker (statt Matching auf das umschließende <div>...</div>) verhindern das
+# Fehlmatchen auf das erste verschachtelte </div> innerhalb eines Artikel-Items.
+_LIST_START = "<!-- ARTICLES:START -->"
+_LIST_END = "<!-- ARTICLES:END -->"
+
+
 def update_blog_index(articles: list[dict]) -> None:
     """Aktualisiert den Blog-Index mit allen bekannten Artikeln (neueste zuerst)."""
     index_path = WEBSITE_DIR / "blog" / "index.html"
@@ -182,19 +211,25 @@ def update_blog_index(articles: list[dict]) -> None:
       <a href="../{rel_path}" class="article-item">
         <div class="article-emoji">{a['rubrik_emoji']}</div>
         <div>
-          <div class="article-meta">{a['rubrik_label']} · {a['datum']}</div>
+          <div class="article-meta">{a['rubrik_label']} · {_format_datum_lang(a['datum'])}</div>
           <h3>{a['title']}</h3>
           <p>{a['excerpt']}</p>
         </div>
       </a>""")
 
-    new_list = "\n".join(items_html) if items_html else "<p>Noch keine Artikel vorhanden.</p>"
+    new_list = "\n".join(items_html) if items_html else "      <p>Noch keine Artikel vorhanden.</p>"
 
     content = index_path.read_text(encoding="utf-8")
-    # Replace article-list content
-    pattern = r'(<div class="article-list" id="article-list">)(.*?)(</div>)'
-    replacement = rf'\1\n{new_list}\n    \3'
-    new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+    start = content.find(_LIST_START)
+    end = content.find(_LIST_END)
+    if start == -1 or end == -1 or end < start:
+        log.warning("Artikel-Marker nicht gefunden in %s — Index nicht aktualisiert", index_path)
+        return
+    new_content = (
+        content[: start + len(_LIST_START)]
+        + "\n" + new_list + "\n      "
+        + content[end:]
+    )
     index_path.write_text(new_content, encoding="utf-8")
     log.info("Blog-Index aktualisiert mit %d Artikeln", len(articles))
 
